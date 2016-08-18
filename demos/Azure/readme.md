@@ -1,4 +1,4 @@
-## Apache Management Demo
+## Demo: Managing Azure using PowerShell
 
 This demo shows management of Azure Compute resource using Azure Resource Management (ARM) cmdlets.
 

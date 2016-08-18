@@ -1,6 +1,11 @@
 ﻿### The techniques used in this demo are documented at
 ### https://azure.microsoft.com/en-us/documentation/articles/powershell-azure-resource-manager/
 
+### Import AzureRM.Profile and AzureRM.Resources modules
+### Make sure the folder you copied them to is in $ENV:PSModulePath
+Import-Module AzureRM.Profile
+Import-Module AzureRM.Resources
+
 ### Supply your Azure Credentials
 Login-AzureRMAccount
 
