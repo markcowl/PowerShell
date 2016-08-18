@@ -14,8 +14,8 @@ New-AzureRMResourceGroup -Name PSAug18 -Location "West US"
 ### Deploy an Ubuntu 14.04 VM using Resource Manager cmdlets
 ### Template is available is at 
 ### http://armviz.io/#/?load=https:%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-vm-simple-linux%2Fazuredeploy.json
-# $password = Convertto-Securestring -String "PowerShellRocks!" -AsPlainText -Force
-New-AzureRMResourceGroupDeployment -ResourceGroupName PSAug18 -TemplateFile ./Compute-Linux.json -adminUserName psuser  -adminPassword "PowerShellRocks!"  -dnsLabelPrefix psaug18ubuntu
+$password = Convertto-Securestring -String "PowerShellRocks!" -AsPlainText -Force
+New-AzureRMResourceGroupDeployment -ResourceGroupName PSAug18 -TemplateFile ./Compute-Linux.json -adminUserName psuser  -adminPassword $password  -dnsLabelPrefix psaug18ubuntu
 
 ### Monitor the status of the deployment
 Get-AzureRMResourceGroupDeployment -ResourceGroupName PSAug18
