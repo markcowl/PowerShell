@@ -3,8 +3,7 @@
 
 ### Import AzureRM.Profile and AzureRM.Resources modules
 ### Make sure the folder you copied them to is in $ENV:PSModulePath
-Import-Module AzureRM.Profile
-Import-Module AzureRM.Resources
+Import-Module AzureRM.NetCore.Preview
 
 ### Supply your Azure Credentials
 Login-AzureRMAccount
